@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "C:/msys64/mingw64/include",
+                "C:/msys64/mingw64/include/stb",
+                "C:/msys64/mingw64/include/GL",
+                "C:/msys64/mingw64/include/GLFW",
+                "C:/msys64/mingw64/include/glm"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/src",
+                    "C:/msys64/mingw64/include",
+                    "C:/msys64/mingw64/include/stb",
+                    "C:/msys64/mingw64/include/GL",
+                    "C:/msys64/mingw64/include/GLFW",
+                    "C:/msys64/mingw64/include/glm"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

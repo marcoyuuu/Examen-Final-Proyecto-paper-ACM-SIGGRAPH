@@ -1,0 +1,4 @@
+C:/Users/yumar/OneDrive/Desktop/COMP 4046/OpenGL/main7/build/CMakeFiles/glad.dir
+C:/Users/yumar/OneDrive/Desktop/COMP 4046/OpenGL/main7/build/CMakeFiles/OpenGLFinalProject.dir
+C:/Users/yumar/OneDrive/Desktop/COMP 4046/OpenGL/main7/build/CMakeFiles/edit_cache.dir
+C:/Users/yumar/OneDrive/Desktop/COMP 4046/OpenGL/main7/build/CMakeFiles/rebuild_cache.dir
