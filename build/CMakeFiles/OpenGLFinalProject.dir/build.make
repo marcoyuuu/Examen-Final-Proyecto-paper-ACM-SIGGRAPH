@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7"
+CMAKE_SOURCE_DIR = "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build"
+CMAKE_BINARY_DIR = "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/OpenGLFinalProject.dir/depend.make
@@ -71,163 +71,147 @@ include CMakeFiles/OpenGLFinalProject.dir/flags.make
 CMakeFiles/OpenGLFinalProject.dir/codegen:
 .PHONY : CMakeFiles/OpenGLFinalProject.dir/codegen
 
-CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
-CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/Untitled-1.cpp
-CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\Untitled-1.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\Untitled-1.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\Untitled-1.cpp"
-
-CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\Untitled-1.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\Untitled-1.cpp.i
-
-CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\Untitled-1.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\Untitled-1.cpp.s
-
-CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
-CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/camera.cpp
-CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\camera.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\camera.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\camera.cpp"
-
-CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\camera.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\camera.cpp.i
-
-CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\camera.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\camera.cpp.s
-
-CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
-CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/light.cpp
-CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\light.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\light.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\light.cpp"
-
-CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\light.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\light.cpp.i
-
-CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\light.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\light.cpp.s
-
-CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
-CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/lighthouse.cpp
-CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\lighthouse.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\lighthouse.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\lighthouse.cpp"
-
-CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\lighthouse.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\lighthouse.cpp.i
-
-CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\lighthouse.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\lighthouse.cpp.s
-
 CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
 CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/main.cpp
+CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/faro_gl/src/main.cpp
 CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\main.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\main.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\main.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\main.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\main.cpp"
 
 CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\main.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\main.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\main.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\main.cpp.i
 
 CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\main.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\main.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\main.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\main.cpp.s
+
+CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
+CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
+CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/faro_gl/src/camera.cpp
+CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\camera.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\camera.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\camera.cpp"
+
+CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\camera.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\camera.cpp.i
+
+CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\camera.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\camera.cpp.s
+
+CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
+CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
+CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/faro_gl/src/light.cpp
+CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\light.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\light.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\light.cpp"
+
+CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\light.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\light.cpp.i
+
+CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\light.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\light.cpp.s
+
+CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
+CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
+CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/faro_gl/src/lighthouse.cpp
+CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\lighthouse.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\lighthouse.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\lighthouse.cpp"
+
+CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\lighthouse.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\lighthouse.cpp.i
+
+CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\lighthouse.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\lighthouse.cpp.s
 
 CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
 CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/mesh.cpp
+CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/faro_gl/src/mesh.cpp
 CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\mesh.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\mesh.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\mesh.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\mesh.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\mesh.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\mesh.cpp"
 
 CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\mesh.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\mesh.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\mesh.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\mesh.cpp.i
 
 CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\mesh.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\mesh.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\mesh.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\mesh.cpp.s
 
 CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
 CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/plane.cpp
+CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/faro_gl/src/plane.cpp
 CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\plane.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\plane.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\plane.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\plane.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\plane.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\plane.cpp"
 
 CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\plane.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\plane.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\plane.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\plane.cpp.i
 
 CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\plane.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\plane.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\plane.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\plane.cpp.s
 
 CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
 CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/scene.cpp
+CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/faro_gl/src/scene.cpp
 CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\scene.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\scene.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\scene.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\scene.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\scene.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\scene.cpp"
 
 CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\scene.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\scene.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\scene.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\scene.cpp.i
 
 CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\scene.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\scene.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\scene.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\scene.cpp.s
 
 CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
 CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/shader.cpp
+CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/faro_gl/src/shader.cpp
 CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\shader.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\shader.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\shader.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\shader.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\shader.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\shader.cpp"
 
 CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\shader.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\shader.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\shader.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\shader.cpp.i
 
 CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/shader.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\shader.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\shader.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\shader.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\shader.cpp.s
 
 CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/flags.make
 CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/includes_CXX.rsp
-CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/OpenGL/main7/src/texture.cpp
+CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.obj: C:/Users/yumar/OneDrive/Desktop/COMP\ 4046/faro_gl/src/texture.cpp
 CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.obj: CMakeFiles/OpenGLFinalProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\texture.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\texture.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\texture.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.obj -MF CMakeFiles\OpenGLFinalProject.dir\src\texture.cpp.obj.d -o CMakeFiles\OpenGLFinalProject.dir\src\texture.cpp.obj -c "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\texture.cpp"
 
 CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.i"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\texture.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\texture.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\texture.cpp" > CMakeFiles\OpenGLFinalProject.dir\src\texture.cpp.i
 
 CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLFinalProject.dir/src/texture.cpp.s"
-	C:\PROGRA~1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\src\texture.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\texture.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\src\texture.cpp" -o CMakeFiles\OpenGLFinalProject.dir\src\texture.cpp.s
 
 # Object files for target OpenGLFinalProject
 OpenGLFinalProject_OBJECTS = \
-"CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj" \
+"CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj" \
 "CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj" \
 "CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj" \
 "CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj" \
-"CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj" \
 "CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj" \
 "CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj" \
 "CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj" \
@@ -237,11 +221,10 @@ OpenGLFinalProject_OBJECTS = \
 # External object files for target OpenGLFinalProject
 OpenGLFinalProject_EXTERNAL_OBJECTS =
 
-bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj
+bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj
 bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj
 bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj
 bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/src/lighthouse.cpp.obj
-bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/src/main.cpp.obj
 bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/src/mesh.cpp.obj
 bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/src/plane.cpp.obj
 bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/src/scene.cpp.obj
@@ -253,10 +236,10 @@ bin/OpenGLFinalProject.exe: C:/msys64/mingw64/lib/libglfw3.dll.a
 bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/linkLibs.rsp
 bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/objects1.rsp
 bin/OpenGLFinalProject.exe: CMakeFiles/OpenGLFinalProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable bin\OpenGLFinalProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable bin\OpenGLFinalProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OpenGLFinalProject.dir\link.txt --verbose=$(VERBOSE)
-	"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Users/yumar/OneDrive/Desktop/COMP 4046/OpenGL/main7/assets/shaders" "C:/Users/yumar/OneDrive/Desktop/COMP 4046/OpenGL/main7/build/bin/assets/shaders"
-	"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Users/yumar/OneDrive/Desktop/COMP 4046/OpenGL/main7/assets/textures" "C:/Users/yumar/OneDrive/Desktop/COMP 4046/OpenGL/main7/build/bin/assets/textures"
+	"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Users/yumar/OneDrive/Desktop/COMP 4046/faro_gl/assets/shaders" "C:/Users/yumar/OneDrive/Desktop/COMP 4046/faro_gl/build/bin/assets/shaders"
+	"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Users/yumar/OneDrive/Desktop/COMP 4046/faro_gl/assets/textures" "C:/Users/yumar/OneDrive/Desktop/COMP 4046/faro_gl/build/bin/assets/textures"
 
 # Rule to build all files generated by this target.
 CMakeFiles/OpenGLFinalProject.dir/build: bin/OpenGLFinalProject.exe
@@ -267,6 +250,6 @@ CMakeFiles/OpenGLFinalProject.dir/clean:
 .PHONY : CMakeFiles/OpenGLFinalProject.dir/clean
 
 CMakeFiles/OpenGLFinalProject.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles\OpenGLFinalProject.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles\OpenGLFinalProject.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/OpenGLFinalProject.dir/depend
 

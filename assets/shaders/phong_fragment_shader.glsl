@@ -1,5 +1,4 @@
 #version 330 core
-
 out vec4 FragColor;
 
 struct PointLight {
@@ -38,91 +37,40 @@ uniform sampler2D texture_diffuse1;
 uniform sampler2D texture_normal1;
 uniform sampler2D texture_roughness1;
 
-// Camera position
 uniform vec3 viewPos;
 
-// Spotlight
 uniform SpotLight spotLight;
 
-// Multiple point lights
 uniform int numPointLights;
-uniform PointLight pointLights[10]; // Up to 10 point lights
+uniform PointLight pointLights[10];
 
-// Calculate attenuation
-float CalcAttenuation(PointLight light, float distance) {
-    return 1.0 / (light.constant + light.linear * distance + 
-                  light.quadratic * (distance * distance));
-}
-
-// Calculate point light contribution
-vec3 CalcPointLight(PointLight light, vec3 norm, vec3 fragPos, vec3 viewDir) {
-    vec3 lightDir = normalize(light.position - fragPos);
-    float diff = max(dot(norm, lightDir), 0.0);
-
-    // Halfway vector for specular
-    vec3 reflectDir = reflect(-lightDir, norm);
-    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32.0);
-
-    float distance = length(light.position - fragPos);
-    float attenuation = CalcAttenuation(light, distance);
-
-    vec3 ambient = light.ambient * texture(texture_diffuse1, TexCoords).rgb;
-    vec3 diffuse = light.diffuse * diff * texture(texture_diffuse1, TexCoords).rgb;
-    vec3 specular = light.specular * spec;
-
-    // Apply attenuation
-    ambient *= attenuation;
-    diffuse *= attenuation;
-    specular *= attenuation;
-
-    return ambient + diffuse + specular;
-}
-
-// Calculate spotlight contribution
-vec3 CalcSpotLight(SpotLight light, vec3 norm, vec3 fragPos, vec3 viewDir) {
-    vec3 lightDir = normalize(light.position - fragPos);
-    float diff = max(dot(norm, lightDir), 0.0);
-
-    // Specular
-    vec3 reflectDir = reflect(-lightDir, norm);
-    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32.0);
-
-    float distance = length(light.position - fragPos);
-    float attenuation = 1.0 / (light.constant + light.linear * distance + 
-                               light.quadratic * (distance * distance));
-
-    float theta = dot(lightDir, normalize(-light.direction));
-    float epsilon = light.cutOff - light.outerCutOff;
-    float intensity = clamp((theta - light.outerCutOff)/epsilon, 0.0, 1.0);
-
-    vec3 ambient = light.ambient * texture(texture_diffuse1, TexCoords).rgb;
-    vec3 diffuse = light.diffuse * diff * texture(texture_diffuse1, TexCoords).rgb;
-    vec3 specular = light.specular * spec;
-
-    // Apply spotlight intensity and attenuation
-    diffuse *= intensity * attenuation;
-    specular *= intensity * attenuation;
-    ambient *= attenuation;
-
-    return ambient + diffuse + specular;
-}
+uniform mat4 model; // si se necesita
 
 void main()
 {
-    // Normal mapping if needed (currently just using Normal)
+    // Este fragment shader debería usar las variables definidas, o al menos alguna para no ser optimizadas.
+    // Simulación simple de iluminación difusa:
     vec3 norm = normalize(Normal);
     vec3 viewDir = normalize(viewPos - FragPos);
 
-    // Start with black
     vec3 result = vec3(0.0);
 
-    // Add spotlight contribution
-    result += CalcSpotLight(spotLight, norm, FragPos, viewDir);
-
-    // Add all point lights contribution
-    for(int i = 0; i < numPointLights; i++) {
-        result += CalcPointLight(pointLights[i], norm, FragPos, viewDir);
+    // Ejemplo de uso, al menos con una pointLight si existe:
+    if(numPointLights > 0) {
+        // Calculo simple con la primera luz:
+        vec3 lightDir = normalize(pointLights[0].position - FragPos);
+        float diff = max(dot(norm, lightDir),0.0);
+        vec3 diffuse = pointLights[0].diffuse * diff * texture(texture_diffuse1, TexCoords).rgb;
+        result += diffuse;
     }
 
-    FragColor = vec4(result, 1.0);
+    // Uso del spotlight (ejemplo):
+    {
+        vec3 lightDir = normalize(spotLight.position - FragPos);
+        float diff = max(dot(norm, lightDir), 0.0);
+        vec3 diffuse = spotLight.diffuse * diff * texture(texture_diffuse1, TexCoords).rgb;
+        result += diffuse;
+    }
+
+    FragColor = vec4(result,1.0);
 }

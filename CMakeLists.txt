@@ -1,70 +1,78 @@
 cmake_minimum_required(VERSION 3.14)
 project(OpenGLFinalProject VERSION 1.0 LANGUAGES C CXX)
 
-# Specify C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Set output directories
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin) # Ensure static libraries are in bin/
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-# Find packages
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(glm REQUIRED)
 
-# Ensure all dependencies are found
 if(NOT OpenGL_FOUND)
-    message(FATAL_ERROR "OpenGL not found!")
+    message(FATAL_ERROR "OpenGL no encontrado!")
 endif()
 
 if(NOT glfw3_FOUND)
-    message(FATAL_ERROR "GLFW3 not found!")
+    message(FATAL_ERROR "GLFW3 no encontrado!")
 endif()
 
 if(NOT glm_FOUND)
-    message(FATAL_ERROR "GLM not found!")
+    message(FATAL_ERROR "GLM no encontrado!")
 endif()
 
-# Find stb_image
 find_path(STB_IMAGE_INCLUDE_DIR
     NAMES stb_image.h
-    PATHS
-        "C:/msys64/mingw64/include"
-    PATH_SUFFIXES stb
+    PATHS "C:/msys64/mingw64/include"
 )
 
 if(NOT STB_IMAGE_INCLUDE_DIR)
-    message(FATAL_ERROR "stb_image.h not found")
+    message(FATAL_ERROR "stb_image.h no encontrado")
 endif()
 
-# Add glad library
 add_library(glad STATIC src/glad.c)
 set_target_properties(glad PROPERTIES 
     LINKER_LANGUAGE C
-    ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY} # Place libglad.a in bin/
+    ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}
 )
 target_include_directories(glad PUBLIC "C:/msys64/mingw64/include")
 
-# Explicitly list source and header files
-file(GLOB_RECURSE SRC_FILES "src/*.cpp")
-file(GLOB_RECURSE HEADER_FILES "src/*.h")
+# Lista de todos los .cpp excepto Untitled-1.cpp
+set(SRC_FILES
+    src/main.cpp
+    src/camera.cpp
+    src/light.cpp
+    src/lighthouse.cpp
+    src/mesh.cpp
+    src/plane.cpp
+    src/scene.cpp
+    src/shader.cpp
+    src/texture.cpp
+    src/constants.h
+    src/camera.h
+    src/light.h
+    src/lighthouse.h
+    src/mesh.h
+    src/plane.h
+    src/scene.h
+    src/shader.h
+    src/texture.h
+    src/Constants.h
+)
 
-# Add executable
-add_executable(OpenGLFinalProject ${SRC_FILES} ${HEADER_FILES})
+add_executable(OpenGLFinalProject ${SRC_FILES})
 
-# Include directories
 target_include_directories(OpenGLFinalProject PRIVATE
     ${OPENGL_INCLUDE_DIR}
     ${GLFW3_INCLUDE_DIR}
     ${GLM_INCLUDE_DIRS}
     ${STB_IMAGE_INCLUDE_DIR}
-    "C:/msys64/mingw64/include" # For glad and KHR headers
+    "C:/msys64/mingw64/include"
 )
 
-# Link libraries
 target_link_libraries(OpenGLFinalProject PRIVATE
     ${OPENGL_gl_LIBRARY}
     glad
@@ -72,7 +80,6 @@ target_link_libraries(OpenGLFinalProject PRIVATE
     glm::glm
 )
 
-# Copy shader and texture files to the executable's assets directory
 add_custom_command(TARGET OpenGLFinalProject POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
         ${CMAKE_SOURCE_DIR}/assets/shaders

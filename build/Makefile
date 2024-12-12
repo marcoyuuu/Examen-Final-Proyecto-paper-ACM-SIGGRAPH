@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7"
+CMAKE_SOURCE_DIR = "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build"
+CMAKE_BINARY_DIR = "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\yumar\OneDrive\Desktop\COMP 4046\OpenGL\main7\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\yumar\OneDrive\Desktop\COMP 4046\faro_gl\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -140,30 +140,6 @@ OpenGLFinalProject: cmake_check_build_system
 OpenGLFinalProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLFinalProject.dir\build.make CMakeFiles/OpenGLFinalProject.dir/build
 .PHONY : OpenGLFinalProject/fast
-
-src/Untitled-1.obj: src/Untitled-1.cpp.obj
-.PHONY : src/Untitled-1.obj
-
-# target to build an object file
-src/Untitled-1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLFinalProject.dir\build.make CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj
-.PHONY : src/Untitled-1.cpp.obj
-
-src/Untitled-1.i: src/Untitled-1.cpp.i
-.PHONY : src/Untitled-1.i
-
-# target to preprocess a source file
-src/Untitled-1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLFinalProject.dir\build.make CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.i
-.PHONY : src/Untitled-1.cpp.i
-
-src/Untitled-1.s: src/Untitled-1.cpp.s
-.PHONY : src/Untitled-1.s
-
-# target to generate assembly for a file
-src/Untitled-1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLFinalProject.dir\build.make CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.s
-.PHONY : src/Untitled-1.cpp.s
 
 src/camera.obj: src/camera.cpp.obj
 .PHONY : src/camera.obj
@@ -415,9 +391,6 @@ help:
 	@echo ... rebuild_cache
 	@echo ... OpenGLFinalProject
 	@echo ... glad
-	@echo ... src/Untitled-1.obj
-	@echo ... src/Untitled-1.i
-	@echo ... src/Untitled-1.s
 	@echo ... src/camera.obj
 	@echo ... src/camera.i
 	@echo ... src/camera.s

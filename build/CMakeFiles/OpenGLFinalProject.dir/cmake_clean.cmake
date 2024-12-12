@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj"
-  "CMakeFiles/OpenGLFinalProject.dir/src/Untitled-1.cpp.obj.d"
   "CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj"
   "CMakeFiles/OpenGLFinalProject.dir/src/camera.cpp.obj.d"
   "CMakeFiles/OpenGLFinalProject.dir/src/light.cpp.obj"
