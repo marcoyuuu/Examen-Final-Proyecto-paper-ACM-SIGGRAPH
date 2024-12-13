@@ -1,49 +1,58 @@
-// Plane.h
-
 #ifndef PLANE_H
 #define PLANE_H
 
 #include "Shader.h"
 #include "Mesh.h"
-#include "Texture.h" // Ensure Texture.h is included
+#include "Texture.h"
 #include <memory>
 #include <vector>
 
 /**
- * @brief Represents a ground plane in the scene.
+ * @class Plane
+ * @brief Representa un plano que actúa como terreno en la escena.
+ *
+ * La clase @c Plane permite la configuración y renderizado de un plano texturizado
+ * para simular terrenos u otras superficies planas.
  */
 class Plane {
 public:
+    /**
+     * @brief Constructor por defecto.
+     */
     Plane();
+
+    /**
+     * @brief Destructor por defecto.
+     */
     ~Plane();
 
     /**
-     * @brief Sets up the ground plane by loading textures and initializing the mesh.
+     * @brief Configura el plano cargando texturas y generando la geometría.
      */
     void Setup();
 
     /**
-     * @brief Renders the ground plane.
+     * @brief Renderiza el plano.
      *
-     * @param shader The shader used for rendering.
+     * @param shader Shader a utilizar para renderizar.
      */
     void draw(const Shader &shader) const;
 
 private:
-    std::unique_ptr<Mesh> planeMesh;
-    std::vector<Texture> textures; // To store plane's textures
+    std::unique_ptr<Mesh> planeMesh; /**< Malla que representa el plano. */
+    std::vector<Texture> textures;  /**< Texturas aplicadas al plano. */
 
     /**
-     * @brief Generates vertices for a large ground plane.
+     * @brief Genera vértices para el plano.
      *
-     * @return std::vector<Vertex> The list of vertices.
+     * @return std::vector<Vertex> Vértices generados.
      */
     std::vector<Vertex> generatePlaneVertices() const;
 
     /**
-     * @brief Generates indices for a quad ground plane.
+     * @brief Genera índices para el plano.
      *
-     * @return std::vector<unsigned int> The list of indices.
+     * @return std::vector<unsigned int> Índices generados.
      */
     std::vector<unsigned int> generatePlaneIndices() const;
 };

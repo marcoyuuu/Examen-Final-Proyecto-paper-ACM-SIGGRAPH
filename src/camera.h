@@ -1,5 +1,3 @@
-// Camera.h
-
 #ifndef CAMERA_H
 #define CAMERA_H
 
@@ -7,78 +5,91 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 /**
- * @brief Defines possible camera movement directions.
+ * @enum CameraMovement
+ * @brief Posibles direcciones de movimiento para la cámara.
  */
 enum class CameraMovement {
-    FORWARD,
-    BACKWARD,
-    LEFT,
-    RIGHT
+    FORWARD,   /**< Avanzar hacia adelante */
+    BACKWARD,  /**< Avanzar hacia atrás */
+    LEFT,      /**< Desplazar a la izquierda */
+    RIGHT      /**< Desplazar a la derecha */
 };
 
 /**
- * @brief Represents a camera in 3D space.
+ * @class Camera
+ * @brief Representa una cámara en espacio 3D.
  *
- * Handles view transformations and user input for camera movement.
+ * La clase @c Camera gestiona transformaciones de vista y entrada del usuario
+ * para mover la cámara en una escena 3D. Ofrece métodos para manejar movimiento
+ * por teclado, entrada de ratón y zoom mediante scroll.
  */
 class Camera {
 public:
-    // Constructor with vectors
+    /**
+     * @brief Constructor que especifica posición e inclinación inicial de la cámara.
+     * @param position Posición inicial de la cámara.
+     * @param up Vector Up mundial.
+     * @param yaw Ángulo yaw inicial (en grados).
+     * @param pitch Ángulo pitch inicial (en grados).
+     */
     Camera(glm::vec3 position = glm::vec3(0.0f, 5.0f, 20.0f), 
            glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f),
            float yaw = -90.0f, 
            float pitch = 0.0f);
 
     /**
-     * @brief Returns the view matrix calculated using Euler Angles and the LookAt Matrix.
-     * 
-     * @return glm::mat4 The view matrix.
+     * @brief Obtiene la matriz de vista calculada usando las propiedades actuales de la cámara.
+     * @return glm::mat4 Matriz de vista.
      */
     glm::mat4 GetViewMatrix() const;
 
     /**
-     * @brief Processes input received from any keyboard-like input system.
-     * 
-     * @param direction The direction of movement.
-     * @param deltaTime The time between the current frame and the last frame.
+     * @brief Procesa la entrada del teclado para mover la cámara en una dirección dada.
+     * @param direction Dirección del movimiento (ver @ref CameraMovement).
+     * @param deltaTime Tiempo transcurrido desde el último frame, para movimiento constante independiente del frame rate.
      */
     void ProcessKeyboard(CameraMovement direction, float deltaTime);
 
     /**
-     * @brief Processes input received from a mouse input system.
-     * 
-     * @param xoffset The offset in the x-direction.
-     * @param yoffset The offset in the y-direction.
-     * @param constrainPitch Whether to constrain the pitch.
+     * @brief Procesa el movimiento del ratón para rotar la cámara.
+     * @param xoffset Desplazamiento en el eje X del ratón.
+     * @param yoffset Desplazamiento en el eje Y del ratón.
+     * @param constrainPitch Indica si se restringe el rango de pitch para evitar invertir la vista.
      */
     void ProcessMouseMovement(float xoffset, float yoffset, bool constrainPitch = true);
 
     /**
-     * @brief Processes input received from a mouse scroll-wheel event.
-     * 
-     * @param yoffset The offset in the y-direction.
+     * @brief Procesa la entrada de la rueda del ratón para ajustar el zoom de la cámara.
+     * @param yoffset Desplazamiento en la rueda del ratón.
      */
     void ProcessMouseScroll(float yoffset);
 
-    // Public member variables (consider making these private with getters/setters)
+    /// Posición de la cámara en el mundo.
     glm::vec3 Position;
+    /// Vector frontal de la cámara.
     glm::vec3 Front;
+    /// Vector Up actual de la cámara.
     glm::vec3 Up;
+    /// Vector Right calculado a partir de Front y WorldUp.
     glm::vec3 Right;
+    /// Vector Up del mundo (generalmente (0,1,0)).
     glm::vec3 WorldUp;
 
-    // Euler Angles
+    /// Ángulo yaw de la cámara (en grados).
     float Yaw;
+    /// Ángulo pitch de la cámara (en grados).
     float Pitch;
 
-    // Camera options
+    /// Velocidad de movimiento (unidades/segundo).
     float MovementSpeed;
+    /// Sensibilidad del ratón para rotaciones.
     float MouseSensitivity;
+    /// Ángulo de zoom (FOV) de la cámara.
     float Zoom;
 
 private:
     /**
-     * @brief Calculates the front vector from the Camera's (updated) Euler Angles.
+     * @brief Actualiza los vectores de la cámara (Front, Right, Up) a partir de Yaw y Pitch.
      */
     void updateCameraVectors();
 };

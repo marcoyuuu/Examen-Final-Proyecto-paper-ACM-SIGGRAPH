@@ -1,5 +1,3 @@
-// Lighthouse.h
-
 #ifndef LIGHTHOUSE_H
 #define LIGHTHOUSE_H
 
@@ -12,102 +10,106 @@
 #include <string>
 
 /**
- * @brief Represents a textured lighthouse with basic lighting.
+ * @class Lighthouse
+ * @brief Representa un faro texturizado con componentes básicos de iluminación.
+ *
+ * La clase @c Lighthouse gestiona la geometría y texturas de un faro, incluyendo su torre, 
+ * techo y beacon. También maneja la configuración de una luz giratoria simulando el beacon.
  */
 class Lighthouse {
 public:
     /**
-     * @brief Constructor initializes mesh pointers.
+     * @brief Constructor que inicializa punteros inteligentes para las partes del faro.
      */
     Lighthouse();
 
     /**
-     * @brief Destructor automatically handles mesh deletion via smart pointers.
+     * @brief Destructor que limpia automáticamente los recursos de las mallas.
      */
     ~Lighthouse();
 
     /**
-     * @brief Sets up the lighthouse components by initializing meshes and loading textures.
+     * @brief Configura el faro cargando texturas y generando geometría.
      */
     void Setup();
 
     /**
-     * @brief Renders the lighthouse with textures and lighting.
+     * @brief Renderiza el faro con iluminación y texturas aplicadas.
      *
-     * @param shader The shader used for rendering.
-     * @param time The current time to animate spotlight direction.
+     * @param shader El shader a utilizar para renderizar.
+     * @param time El tiempo actual para animar la dirección del spotlight.
      */
     void Render(const Shader& shader, float time);
 
 private:
-    std::unique_ptr<Mesh> tower;    // Cylinder for the main tower
-    std::unique_ptr<Mesh> roof;     // Cone for the roof
-    std::unique_ptr<Mesh> beacon;   // Sphere for the beacon
+    std::unique_ptr<Mesh> tower;    /**< Malla que representa la torre del faro. */
+    std::unique_ptr<Mesh> roof;     /**< Malla que representa el techo del faro. */
+    std::unique_ptr<Mesh> beacon;   /**< Malla que representa el beacon del faro. */
 
-    std::vector<Texture> towerTextures;  // Textures for the tower
-    std::vector<Texture> roofTextures;   // Textures for the roof
+    std::vector<Texture> towerTextures; /**< Texturas aplicadas a la torre. */
+    std::vector<Texture> roofTextures;  /**< Texturas aplicadas al techo. */
 
     /**
-     * @brief Generates vertices for a cylinder.
+     * @brief Genera vértices para un cilindro.
      *
-     * @param radius Radius of the cylinder.
-     * @param height Height of the cylinder.
-     * @param sectorCount Number of sectors (slices) around the circumference.
-     * @return std::vector<Vertex> Vector of generated vertices.
+     * @param radius Radio del cilindro.
+     * @param height Altura del cilindro.
+     * @param sectorCount Número de sectores alrededor de la circunferencia.
+     * @return std::vector<Vertex> Vértices generados.
      */
     std::vector<Vertex> generateCylinderVertices(float radius, float height, int sectorCount) const;
 
     /**
-     * @brief Generates indices for a cylinder.
+     * @brief Genera índices para un cilindro.
      *
-     * @param sectorCount Number of sectors (slices) around the circumference.
-     * @return std::vector<unsigned int> Vector of generated indices.
+     * @param sectorCount Número de sectores alrededor de la circunferencia.
+     * @return std::vector<unsigned int> Índices generados.
      */
     std::vector<unsigned int> generateCylinderIndices(int sectorCount) const;
 
     /**
-     * @brief Generates vertices for a cone.
+     * @brief Genera vértices para un cono.
      *
-     * @param radius Base radius of the cone.
-     * @param height Height of the cone.
-     * @param sectorCount Number of sectors (slices) around the circumference.
-     * @return std::vector<Vertex> Vector of generated vertices.
+     * @param radius Radio base del cono.
+     * @param height Altura del cono.
+     * @param sectorCount Número de sectores alrededor de la circunferencia.
+     * @return std::vector<Vertex> Vértices generados.
      */
     std::vector<Vertex> generateConeVertices(float radius, float height, int sectorCount) const;
 
     /**
-     * @brief Generates indices for a cone.
+     * @brief Genera índices para un cono.
      *
-     * @param sectorCount Number of sectors (slices) around the circumference.
-     * @return std::vector<unsigned int> Vector of generated indices.
+     * @param sectorCount Número de sectores alrededor de la circunferencia.
+     * @return std::vector<unsigned int> Índices generados.
      */
     std::vector<unsigned int> generateConeIndices(int sectorCount) const;
 
     /**
-     * @brief Generates vertices for a sphere.
+     * @brief Genera vértices para una esfera.
      *
-     * @param radius Radius of the sphere.
-     * @param sectorCount Number of sectors (slices) around the circumference.
-     * @param stackCount Number of stacks (horizontal slices) from top to bottom.
-     * @return std::vector<Vertex> Vector of generated vertices.
+     * @param radius Radio de la esfera.
+     * @param sectorCount Número de sectores (cortes verticales).
+     * @param stackCount Número de stacks (cortes horizontales).
+     * @return std::vector<Vertex> Vértices generados.
      */
     std::vector<Vertex> generateSphereVertices(float radius, int sectorCount, int stackCount) const;
 
     /**
-     * @brief Generates indices for a sphere.
+     * @brief Genera índices para una esfera.
      *
-     * @param sectorCount Number of sectors (slices) around the circumference.
-     * @param stackCount Number of stacks (horizontal slices) from top to bottom.
-     * @return std::vector<unsigned int> Vector of generated indices.
+     * @param sectorCount Número de sectores (cortes verticales).
+     * @param stackCount Número de stacks (cortes horizontales).
+     * @return std::vector<unsigned int> Índices generados.
      */
     std::vector<unsigned int> generateSphereIndices(int sectorCount, int stackCount) const;
 
     /**
-     * @brief Loads a texture from a given file path.
+     * @brief Carga una textura desde un archivo.
      *
-     * @param path The file path to the texture image.
-     * @param type The type of texture (e.g., "texture_diffuse").
-     * @return Texture The loaded Texture object.
+     * @param path Ruta al archivo de textura.
+     * @param type Tipo de textura (por ejemplo, "texture_diffuse").
+     * @return Texture Textura cargada.
      */
     Texture loadTexture(const std::string& path, const std::string& type) const;
 };

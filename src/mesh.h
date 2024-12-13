@@ -1,9 +1,7 @@
-// Mesh.h
-
 #ifndef MESH_H
 #define MESH_H
 
-#include <glad/glad.h> // Must be included before GLFW or other OpenGL headers
+#include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <vector>
 #include <string>
@@ -11,26 +9,30 @@
 #include "Texture.h"
 
 /**
- * @brief Structure to hold vertex data.
+ * @struct Vertex
+ * @brief Almacena la información de un vértice (posición, normal, color, coordenadas de textura).
  */
 struct Vertex {
-    glm::vec3 Position;
-    glm::vec3 Normal;
-    glm::vec3 Color;
-    glm::vec2 TexCoords;
+    glm::vec3 Position;  /**< Posición del vértice */
+    glm::vec3 Normal;    /**< Normal del vértice */
+    glm::vec3 Color;     /**< Color del vértice */
+    glm::vec2 TexCoords; /**< Coordenadas de textura del vértice */
 };
 
 /**
- * @brief Represents a mesh with vertex and index data, along with associated textures.
+ * @class Mesh
+ * @brief Representa una malla con vértices, índices y texturas.
+ *
+ * La clase @c Mesh encapsula la creación de buffers de OpenGL (VBO, VAO, EBO)
+ * y ofrece una función @c Draw para renderizar la geometría con un shader dado.
  */
 class Mesh {
 public:
     /**
-     * @brief Constructs a Mesh object with vertices, indices, and textures.
-     *
-     * @param vertices Vector of Vertex structures.
-     * @param indices Vector of indices for indexed drawing.
-     * @param textures Vector of Texture objects associated with the mesh.
+     * @brief Constructor de Mesh.
+     * @param vertices Vector de vértices.
+     * @param indices Vector de índices para dibujo indexado.
+     * @param textures Vector de texturas asociadas a la malla.
      */
     Mesh(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices, std::vector<Texture>&& textures);
 
@@ -38,33 +40,30 @@ public:
     Mesh(const Mesh&) = delete;
     Mesh& operator=(const Mesh&) = delete;
 
-    // Allow move semantics
+    // Move semantics
     Mesh(Mesh&& other) noexcept;
     Mesh& operator=(Mesh&& other) noexcept;
 
     /**
-     * @brief Destructor to clean up OpenGL resources.
+     * @brief Destructor. Libera los recursos de OpenGL.
      */
     ~Mesh();
 
     /**
-     * @brief Renders the mesh using the provided shader.
-     *
-     * @param shader Shader program to use for rendering.
+     * @brief Dibuja la malla usando el shader proporcionado.
+     * @param shader Shader a utilizar.
      */
     void Draw(const Shader& shader) const;
 
 private:
-    // Render data
-    GLuint VAO, VBO, EBO;
-    GLsizei indexCount;
-    std::vector<Texture> textures;
+    GLuint VAO, VBO, EBO;   /**< Identificadores de buffers OpenGL */
+    GLsizei indexCount;     /**< Cantidad de índices de la malla */
+    std::vector<Texture> textures; /**< Texturas asociadas a la malla */
 
     /**
-     * @brief Initializes all the buffer objects/arrays.
-     *
-     * @param vertices Vector of Vertex structures.
-     * @param indices Vector of indices for indexed drawing.
+     * @brief Inicializa los buffers (VAO, VBO, EBO) y configura las entradas de vértice.
+     * @param vertices Lista de vértices.
+     * @param indices Lista de índices.
      */
     void setupMesh(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices);
 };
