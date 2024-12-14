@@ -1,4 +1,0 @@
-C:/Users/yumar/OneDrive/Desktop/COMP 4046/faro_gl/build/CMakeFiles/glad.dir
-C:/Users/yumar/OneDrive/Desktop/COMP 4046/faro_gl/build/CMakeFiles/OpenGLFinalProject.dir
-C:/Users/yumar/OneDrive/Desktop/COMP 4046/faro_gl/build/CMakeFiles/edit_cache.dir
-C:/Users/yumar/OneDrive/Desktop/COMP 4046/faro_gl/build/CMakeFiles/rebuild_cache.dir
