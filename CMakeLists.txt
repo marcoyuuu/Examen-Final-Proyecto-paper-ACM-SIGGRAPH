@@ -24,13 +24,19 @@ if(NOT glm_FOUND)
     message(FATAL_ERROR "GLM no encontrado!")
 endif()
 
+# Locate stb_image.h
 find_path(STB_IMAGE_INCLUDE_DIR
     NAMES stb_image.h
-    PATHS "C:/msys64/mingw64/include"
+    PATHS 
+        "C:/msys64/mingw64/include"
+        "C:/msys64/mingw64/include/stb"
+    PATH_SUFFIXES "stb"
 )
 
 if(NOT STB_IMAGE_INCLUDE_DIR)
-    message(FATAL_ERROR "stb_image.h no encontrado")
+    message(FATAL_ERROR "stb_image.h not found. Please verify its installation.")
+else()
+    message(STATUS "Found stb_image.h in ${STB_IMAGE_INCLUDE_DIR}")
 endif()
 
 add_library(glad STATIC src/glad.c)
